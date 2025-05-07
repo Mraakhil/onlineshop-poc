@@ -23,8 +23,7 @@ pipeline {
             steps {
                 script {
                     checkout_code(
-                        github_credentials: GITHUB_CREDENTIALS,
-                        branch: GIT_BRANCH
+                         git url: 'https://github.com/Mraakhil/dockertheend.git', branch: 'main'
                     )
                 }
             }
